@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f4f9;
+            text-align: center;
+        }
+        h1 {
+            color: #c57eb5;
+            font-size: 2.5rem;
+            margin: 20px;
+        }
+        .perfume-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .perfume-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .perfume-item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perfume Gallery</h1>
+    <div class="perfume-container">
+        <div class="perfume-item">
+            <img src="perfume1.jpg" alt="Chanel No. 5">
+            <p>"Chanel No. 5" - For the timeless elegance in your soul.</p>
+        </div>
+        <div class="perfume-item">
+            <img src="perfume2.jpg" alt="Daisy by Marc Jacobs">
+            <p>"Daisy by Marc Jacobs" - A fresh fragrance that reminds me of your warmth.</p>
+        </div>
+        <div class="perfume-item">
+            <img src="perfume3.jpg" alt="Miss Dior">
+            <p>"Miss Dior" - Elegant and graceful, just like you.</p>
+        </div>
+    </div>
+</body>
+</html>
